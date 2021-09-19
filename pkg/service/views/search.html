@@ -1,0 +1,18 @@
+<div class="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1><i class="glyphicon glyphicon-search"></i> SEARCH FOR CONTRIBUTORS</h1>
+                <form action="/contributors" method="get">
+                    <input class="form-control" name="repo" type="text" value="{{.term}}"/>
+                    <input class="btn btn-default" type="submit" value="Search" style="font-size: 16px;"/>
+                </form>
+            </div><!-- col-md-12 -->
+        </div><!-- row -->
+    </div><!-- container -->
+    <div class="clearfix"></div>
+</div><!-- top -->
+
+<div class="results-wrapper">
+	{{.Results}}
+</div>
